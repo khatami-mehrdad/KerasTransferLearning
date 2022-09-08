@@ -21,3 +21,25 @@ Validation accuracy : 0.968999981880188<br/>
 Validation loss : 0.49909040331840515<br/>
 
 ## train.py
+This script trains the model based on standard SGD.
+
+10 images:<br/>
+epochs: 100, lr: 0.0005<br/>
+Validation accuracy : 0.9419999718666077<br/>
+Validation loss : 0.3839479982852936<br/>
+
+epochs: 100, lr: 0.0005<br/>
+Validation accuracy : 0.953000009059906<br/>
+Validation loss : 0.3696589171886444<br/>
+
+100 images:<br/>
+epochs: 100, lr: 0.0005<br/>
+Validation accuracy : 0.9710000157356262<br/>
+Validation loss : 0.3566269278526306<br/>
+
+epochs: 50, lr: 0.001<br/>
+Validation accuracy : 0.9789999723434448
+Validation loss : 0.3392152190208435
+
+
+
