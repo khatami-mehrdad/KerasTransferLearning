@@ -39,5 +39,8 @@ Validation loss : 0.3566269278526306<br/><br/>
 Validation accuracy : 0.9789999723434448<br/>
 Validation loss : 0.3392152190208435<br/>
 
+1000 images, epochs: 10, lr: 0.001<br/>
+Validation accuracy : 0.9829999804496765<br/>
+Validation loss : 0.32968994975090027<br/>
 
 
