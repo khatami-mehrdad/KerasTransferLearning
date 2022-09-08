@@ -25,20 +25,19 @@ This script trains the model based on standard SGD.
 
 10 images, epochs: 100, lr: 0.0005<br/>
 Validation accuracy : 0.9419999718666077<br/>
-Validation loss : 0.3839479982852936<br/>
+Validation loss : 0.3839479982852936<br/><br/>
 
 10 images, epochs: 100, lr: 0.001<br/>
 Validation accuracy : 0.953000009059906<br/>
-Validation loss : 0.3696589171886444<br/>
+Validation loss : 0.3696589171886444<br/><br/>
 
-100 images:<br/>
-epochs: 100, lr: 0.0005<br/>
+100 images, epochs: 100, lr: 0.0005<br/>
 Validation accuracy : 0.9710000157356262<br/>
-Validation loss : 0.3566269278526306<br/>
+Validation loss : 0.3566269278526306<br/><br/>
 
-epochs: 50, lr: 0.001<br/>
-Validation accuracy : 0.9789999723434448
-Validation loss : 0.3392152190208435
+100 images, epochs: 50, lr: 0.001<br/>
+Validation accuracy : 0.9789999723434448<br/>
+Validation loss : 0.3392152190208435<br/>
 
 
 
