@@ -5,15 +5,16 @@ import os
 import tensorflow as tf
 
 IMAGE_CNT_MODE = 1
-PATH = ['cats_and_dogs_filtered', 'cats_and_dogs_filtered_10', 'cats_and_dogs_filtered_100']
-train_dir = os.path.join(PATH[IMAGE_CNT_MODE], 'train')
-validation_dir = os.path.join(PATH[IMAGE_CNT_MODE], 'validation')
+PATH = 'cats_and_dogs_filtered'
+TRAIN_PATH = ['train', 'train_first10', 'train_first100']
+train_dir = os.path.join(PATH, TRAIN_PATH[IMAGE_CNT_MODE])
+validation_dir = os.path.join(PATH, 'validation')
 
 # MODEL = 'MobileNetV2'
 MODEL = 'ResNet50'
 
-epochs=30
-base_learning_rate = 0.001
+epochs=20
+base_learning_rate = 0.0001
 
 
 ### dataset

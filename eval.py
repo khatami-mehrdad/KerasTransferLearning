@@ -4,13 +4,12 @@ import numpy as np
 import os
 import tensorflow as tf
 
-IMAGE_CNT_MODE = 0
-PATH = ['cats_and_dogs_filtered', 'cats_and_dogs_filtered_10', 'cats_and_dogs_filtered_100']
-validation_dir = os.path.join(PATH[IMAGE_CNT_MODE], 'validation')
+IMAGE_CNT_MODE = 1
+PATH = 'cats_and_dogs_filtered'
+validation_dir = os.path.join(PATH, 'validation')
 
 MODEL = 'MobileNetV2'
 # MODEL = 'ResNet50'
-
 
 ### dataset
 BATCH_SIZE = 32
@@ -70,14 +69,16 @@ saved_files['ResNet50'] = [ 'ResNet50_cats_and_dogs_filtered.npy',
                             'ResNet50_first10_cats_and_dogs_filtered.npy',
                             'ResNet50_first100_cats_and_dogs_filtered.npy']
 
-fc_w = np.load( saved_files[MODEL][IMAGE_CNT_MODE])
+weights_path = os.path.join('checkpoints', saved_files[MODEL][IMAGE_CNT_MODE])       
+
+fc_w = np.load(weights_path)
 
 ### Add a classification head
 global_average_layer = tf.keras.layers.GlobalAveragePooling2D()
 num_outputs=len(class_names)
 prediction_layer = tf.keras.layers.Dense(num_outputs,
                                         use_bias=False,
-                                        kernel_initializer=tf.keras.initializers.Constant(fc_w),
+                                        kernel_initializer=tf.keras.initializers.Constant( np.transpose(fc_w, [1, 0]) ),
                                         ) # cats and dogs
 final_output_layer=tf.keras.layers.Softmax()
 #
