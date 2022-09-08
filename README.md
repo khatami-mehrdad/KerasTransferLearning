@@ -23,12 +23,11 @@ Validation loss : 0.49909040331840515<br/>
 ## train.py
 This script trains the model based on standard SGD.
 
-10 images:<br/>
-epochs: 100, lr: 0.0005<br/>
+10 images, epochs: 100, lr: 0.0005<br/>
 Validation accuracy : 0.9419999718666077<br/>
 Validation loss : 0.3839479982852936<br/>
 
-epochs: 100, lr: 0.0005<br/>
+10 images, epochs: 100, lr: 0.001<br/>
 Validation accuracy : 0.953000009059906<br/>
 Validation loss : 0.3696589171886444<br/>
 
