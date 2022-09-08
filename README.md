@@ -8,16 +8,16 @@ This script evaluate the accuracy of the **OM** saved checkpoints
 
 MobileNetV2 results using 
 
-10 images:\n
-Validation accuracy : 0.9559999704360962\n
-Validation loss : 0.5512717366218567\n
+10 images:<br/>
+Validation accuracy : 0.9559999704360962<br/>
+Validation loss : 0.5512717366218567<br/>
 
-100 images:\n
-Validation accuracy : 0.9729999899864197\n
-Validation loss : 0.5023120641708374\n
+100 images:<br/>
+Validation accuracy : 0.9729999899864197<br/>
+Validation loss : 0.5023120641708374<br/>
 
-All 1000 images:\n
-Validation accuracy : 0.968999981880188\n
-Validation loss : 0.49909040331840515\n
+All 1000 images:<br/>
+Validation accuracy : 0.968999981880188<br/>
+Validation loss : 0.49909040331840515<br/>
 
 ## train.py
